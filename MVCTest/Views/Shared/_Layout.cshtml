@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Bundles/css")
+
+    @RenderSection("Css", required: false)
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            @Html.Partial("_Sidebar", new { area = "" })
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                @Html.Action("_Header", "Home", new { area = "", title = ViewBag.Title })
+
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+
+    @Scripts.Render("~/Bundles/js")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
