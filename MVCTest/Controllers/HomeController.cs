@@ -24,9 +24,9 @@ namespace MVCTest.Controllers
             //check authentication
             model.UserViewModel = new UserViewModel
             {
-                UserId = 0,
+                Id = 0,
                 UserName = "iperez",
-                FullName = "Ivan Perez"
+                First = "Ivan"
             };
 
             return View("_Header", model);

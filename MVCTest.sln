@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTest", "MVCTest\MVCTest.csproj", "{DC007EED-8985-4D29-A01D-8CD3FAC4BBD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSM.Data", "OSM.Data\OSM.Data.csproj", "{CCC7FC14-58B5-43F2-91F7-026F1C031433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSM.Business", "OSM.Business\OSM.Business.csproj", "{42E6726C-2935-4ED8-BBB3-0D796E139FAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DC007EED-8985-4D29-A01D-8CD3FAC4BBD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC007EED-8985-4D29-A01D-8CD3FAC4BBD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC007EED-8985-4D29-A01D-8CD3FAC4BBD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC7FC14-58B5-43F2-91F7-026F1C031433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC7FC14-58B5-43F2-91F7-026F1C031433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC7FC14-58B5-43F2-91F7-026F1C031433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC7FC14-58B5-43F2-91F7-026F1C031433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E6726C-2935-4ED8-BBB3-0D796E139FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E6726C-2935-4ED8-BBB3-0D796E139FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E6726C-2935-4ED8-BBB3-0D796E139FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E6726C-2935-4ED8-BBB3-0D796E139FAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

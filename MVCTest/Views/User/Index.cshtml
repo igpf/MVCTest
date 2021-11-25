@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model MVCTest.Models.UsersViewModel
+
+<h2>Index</h2>
+
+@foreach (var user in Model.UsersList)
+{
+    @user.UserName
+}
