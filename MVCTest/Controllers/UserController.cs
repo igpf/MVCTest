@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using MVCTest.Models;
 using OSM.Business.Interfaces;
+using OSM.Business.Services;
+using OSM.Data;
+using OSM.Data.Repositories;
 
 namespace MVCTest.Controllers
 {
@@ -12,18 +15,20 @@ namespace MVCTest.Controllers
     {
         private readonly IUsersBusinessService _usersBusinessService;
 
-        public UserController(IUsersBusinessService iUsersBusinessService)
+        public UserController()
         {
-            _usersBusinessService = iUsersBusinessService;
+
+            _usersBusinessService = new UsersBusinessService(new UnitOfWork(new OSMDatabaseContext()));
         }
-        [HttpGet]
+
+        [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Head)]
         public ActionResult Index()
         {
 
             var usersListModelView = new UsersViewModel();
 
             usersListModelView.UsersList = _usersBusinessService.GetAll();
-            return View("Index", usersListModelView);
+            return View(usersListModelView);
         }
 
     }

@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Entities\Users.cs" />
     <Compile Include="Interfaces\IUsersBusinessService.cs" />
     <Compile Include="Services\UsersBusinessService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
